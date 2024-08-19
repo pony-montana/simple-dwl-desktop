@@ -32,7 +32,9 @@ You find the pseudo-complete list in /packagelist.txt
 
 You can find some alternatives in https://github.com/natpen/awesome-wayland
 
+# REFERENCE
 
-
-
-
+The upstream repos and the people I stolen code from:
+https://github.com/LukeSmithxyz/voidrice
+https://codeberg.org/dwl/dwl
+https://codeberg.org/sewn
