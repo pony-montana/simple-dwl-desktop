@@ -1,0 +1,45 @@
+#!/bin/sh
+
+# sudo not required for some system commands
+for command in mount umount sv updatedb su shutdown poweroff reboot ; do
+	alias $command="doas $command"
+done; unset command
+
+se() {
+	choice="$(find ~/.local/bin -mindepth 1 -printf '%P\n' | fzf)"
+	[ -f "$HOME/.local/bin/$choice" ] && $EDITOR "$HOME/.local/bin/$choice"
+	;}
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -riv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	bc="bc -ql" \
+	rsync="rsync -vrPlu" \
+	mkd="mkdir -pv" \
+	yt="yt-dlp --embed-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ytt="yt --skip-download --write-thumbnail" \
+	ffmpeg="ffmpeg -hide_banner" \
+	vim="nvim"
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi" \
+	ip="ip -color=auto"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	g="git" \
+	transadd="transmission-remote -a" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	z="zathura"
+
+alias \
+	lf="ranger" \
+	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
