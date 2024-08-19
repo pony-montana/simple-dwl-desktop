@@ -1,0 +1,24 @@
+From this repo:
+
+dwl
+mew (simple clone of dmenu for wayland)
+slstatus (utility to pass system info to the dwl bar)
+wlock (utility to lock your screen)
+
+
+From gentoo repos + some from guru (you will find it in pretty all distro repos):
+
+gui-apps/foot
+gui-apps/wl-clipboard
+gui-apps/swaylock
+gui-apps/kanshi
+gui-apps/grim
+app-shells/zsh
+app-shells/zsh-syntax-highlighting
+app-editors/neovim
+media-gfx/imv
+media-gfx/imagemagick
+app-misc/ranger
+gui-apps/wbg
+
+other stuff are common and/or are not important for this dwl desktop .
