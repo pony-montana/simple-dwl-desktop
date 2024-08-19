@@ -1,3 +1,9 @@
+# SCREENSHOTS
+
+/20240819_17h21m57s_grim.png
+/20240819_17h22m09s_grim.png
+/20240819_17h23m39s_grim.png
+
 # A SIMPLE KISS DESKTOP BASED ON DWL.
 
 dwl is a dwm clone based on wayland protocols, in particular on wlroots library.
